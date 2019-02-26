@@ -1,3 +1,21 @@
+body>div{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+}
+table td{
+  border: 1px solid #ccc;
+  border-bottom: none;
+  padding: 0;
+}
+table tr td:nth-child(2){
+  border-left: none;
+}
+table tr:nth-last-child(1) td{
+  border-bottom: 1px solid #ccc;
+}
 /*loop下组件的样式*/
 .loop{
   position: relative;
