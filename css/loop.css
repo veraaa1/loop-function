@@ -1,0 +1,79 @@
+/*loop下组件的样式*/
+.loop{
+  position: relative;
+}
+.loop>a{
+  text-decoration: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  opacity: 0;
+  transition: all 0.5s
+}
+.loop>a:first-child{
+  opacity: 1;
+  z-index: 1;
+}
+.loop>a>img{
+  display: block;
+  width: 100%;
+}
+/*左右按钮及分页器样式*/
+.list{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 80px;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  align-items: center
+}
+.list>li{
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(0,0,0,0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  transition: all 0.1s
+  
+}
+.list>li>span{
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.1s
+}
+.list>li:first-child>span {
+  opacity: 1;
+}
+/*左右页*/
+.change-btn{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  margin-top: -25px;
+  z-index: 100;
+}
+.change-btn>a{
+  background-color: rgba(0, 0, 0, 0.3);
+  text-decoration:none;
+  color: #fff;
+  font-size: 20px;
+  width: 10%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px
+  
+}
